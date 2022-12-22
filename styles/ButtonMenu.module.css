@@ -1,0 +1,23 @@
+.container {
+    color: #f6f3ee;
+
+    width: 100%;
+    height: 40px;
+    border-right: 1px solid;
+    border-color: #797777;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s all ease;
+
+}
+
+.container p {
+    font-weight: 500;
+}
+
+.container:hover {
+    background-color: #797777;
+
+}
