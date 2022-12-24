@@ -1,14 +1,14 @@
 import Head from "next/head";
-import styles from "../styles/Header.module.css";
-import Layout from "../components/Layout";
+import styles from "../../styles/Guias.module.css";
+import Layout from "../../components/Layout";
 
-export default function Home() {
+export default function Guias() {
   return (
     <div>
       <Head>
-        <title>Camed</title>
+        <title>Guias do Estudante</title>
         <meta
-          name="Site do Camed UFS"
+          name="Página de Guias do Estudante do site do Camed UFS"
           content="Conteúdos relacionados ao Camed UFS"
         />
         <link rel="icon" href="/logo.png" />

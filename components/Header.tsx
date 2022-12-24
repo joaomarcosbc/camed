@@ -22,8 +22,8 @@ export default function Header() {
       </div>
       <div className={styles.menu}>
         <ButtonMenu goTo="/" name="Início" />
-        <ButtonMenu goTo="/" name="guias do estudante" />
-        <ButtonMenu goTo="/" name="Ligas acadêmicas" />
+        <ButtonMenu goTo="/guias" name="guias do estudante" />
+        <ButtonMenu goTo="/ligas" name="Ligas acadêmicas" />
         <ButtonMenu goTo="/" name="prestação de contas" />
         <ButtonMenu goTo="/" name="Nosso trabalho" />
         <ButtonMenu goTo="/" name="fale com a gente" />
