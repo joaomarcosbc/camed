@@ -1,6 +1,8 @@
 import Head from "next/head";
-import styles from "../styles/Header.module.css";
+import styles from "../styles/Home.module.css";
 import Layout from "../components/Layout";
+import Image from "next/image";
+import equipe from "../public/equipe.png";
 
 export default function Home() {
   return (
@@ -14,7 +16,12 @@ export default function Home() {
         <link rel="icon" href="/logo.png" />
       </Head>
       <Layout>
-        <main className={styles.main}></main>
+        <div className={styles.container}>
+          <aside className={styles.aside}>
+            <div className={styles.image}></div>
+          </aside>
+          <main className={styles.main}></main>
+        </div>
       </Layout>
     </div>
   );

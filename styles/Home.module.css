@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.aside {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.main {
+    flex: 1;
+
+}
+
+.image {
+    border-radius: 10px;
+    background-image: url('../public/equipe.png');
+    width: 642px;
+    height: 349.7px;
+
+}
