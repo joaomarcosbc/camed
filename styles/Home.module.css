@@ -42,13 +42,29 @@
     text-align: justify;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1320px) {
     .container {
         flex-direction: column-reverse;
         gap: 60px;
     }
 
-    /* .board {
-        margin-top: 70px;
-    } */
+    .board {
+        width: 55%;
+    }
+
+    .image {
+        width: 55%;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 900px) {
+
+
+    .board {
+        width: 70%;
+    }
+    .image {
+        width: 70%;
+    }
 }
