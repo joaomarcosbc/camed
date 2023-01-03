@@ -10,3 +10,16 @@
     flex: 2;
 }
 
+@media (max-width: 1400px) {
+    .container {
+        gap: 60px;
+    }
+}
+
+
+
+@media (max-width: 1000px) {
+    .container {
+        gap: 60px;
+    }
+}

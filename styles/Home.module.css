@@ -14,6 +14,10 @@
 
 .main {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -22,5 +26,29 @@
     background-image: url('../public/equipe.png');
     width: 642px;
     height: 349.7px;
+}
 
+.board {
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.text {
+    text-align: justify;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        flex-direction: column-reverse;
+        gap: 60px;
+    }
+
+    /* .board {
+        margin-top: 70px;
+    } */
 }

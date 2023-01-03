@@ -30,6 +30,7 @@
     color: white;
     font-size: 22px;
     font-family: 'Cantarell', sans-serif;
+    text-align: center;
 
 }
 
@@ -44,3 +45,15 @@
 .button {
     width: 100%;
 }
+
+@media (max-width: 1140px) {
+    .menu {
+        display: none;
+    }
+    .bannerTitle {
+        font-size: 18px;
+
+    }
+
+}
+
