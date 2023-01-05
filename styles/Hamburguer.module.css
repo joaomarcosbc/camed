@@ -8,6 +8,13 @@
   display: none;
 }
 
+.button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
 @media (max-width: 1140px) {
   .container {
     display: block;
