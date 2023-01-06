@@ -18,7 +18,9 @@ export default function Home() {
       <Layout>
         <div className={styles.container}>
           <aside className={styles.aside}>
-            <div className={styles.image}></div>
+            <div className={styles.image}>
+              <Image src={equipe} alt="test" />
+            </div>
           </aside>
           <main className={styles.main}>
             <div className={styles.board}>
