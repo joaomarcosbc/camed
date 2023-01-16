@@ -62,14 +62,14 @@ export default function Header() {
       </div>
       <Hamburguer className={styles.menuHamburguer}>
         <div>
-          {pages.map((page) => {
-            return <ButtonMenu goTo={page.path} name={page.name} />;
+          {pages.map((page, index) => {
+            return <ButtonMenu goTo={page.path} name={page.name} key={index} />;
           })}
         </div>
       </Hamburguer>
       <div className={styles.menu}>
-        {pages.map((page) => {
-          return <ButtonMenu goTo={page.path} name={page.name} />;
+        {pages.map((page, index) => {
+          return <ButtonMenu goTo={page.path} name={page.name} key={index} />;
         })}
       </div>
     </header>

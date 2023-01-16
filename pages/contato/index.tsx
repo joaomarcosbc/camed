@@ -28,8 +28,8 @@ export default function Contato() {
       </Head>
       <Layout>
         <main className={styles.main}>
-          {contacts.map((contact) => {
-            return <ContactCard title={contact.title} />;
+          {contacts.map((contact, index) => {
+            return <ContactCard title={contact.title} key={index} />;
           })}
         </main>
       </Layout>
