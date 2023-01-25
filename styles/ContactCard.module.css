@@ -26,3 +26,10 @@
   /* align-self: center; */
   font-weight: 300;
 }
+
+@media (max-width: 325px) {
+  .container {
+    width: 270px;
+    height: 270px;
+  }
+}

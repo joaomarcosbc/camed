@@ -59,17 +59,10 @@
   }
 }
 
-@media (max-width: 840px) {
+@media (max-width: 1140px) {
   .bannerImages {
     display: none;
   }
-
-  .banner {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 1140px) {
   .menu {
     display: none;
   }

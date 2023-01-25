@@ -6,3 +6,9 @@
   justify-content: center;
   gap: 20px;
 }
+
+@media (max-width: 950px) {
+  .main {
+    flex-direction: column;
+  }
+}
