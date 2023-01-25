@@ -19,7 +19,7 @@ export default function Home() {
         <div className={styles.container}>
           <aside className={styles.aside}>
             <div className={styles.image}>
-              <Image src={equipe} alt="test" />
+              <Image src={equipe} alt="test" priority />
             </div>
           </aside>
           <main className={styles.main}>
