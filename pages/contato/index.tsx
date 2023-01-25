@@ -15,7 +15,7 @@ export default function Contato() {
       icon: <WhatsappLogo size={70} color="#303030" />,
       contacts: [
         "Bia (vice-coordenadora geral)",
-        "Céverton (coordenador geral)",
+        "Cléverton (coordenador geral)",
       ],
       onclick: () => {
         router.push(
