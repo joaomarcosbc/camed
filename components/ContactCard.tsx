@@ -19,8 +19,8 @@ export default function ContactCard({
       <h1 className={styles.title}>{title}</h1>
       {children}
       <div>
-        {contacts.map((contact) => {
-          return <p>{contact}</p>;
+        {contacts.map((contact, index) => {
+          return <p key={index}>{contact}</p>;
         })}
       </div>
     </div>
