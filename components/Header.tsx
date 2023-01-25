@@ -8,6 +8,29 @@ import ButtonMenu from "./ButtonMenu";
 import Hamburguer from "./Hamburguer";
 
 export default function Header() {
+  const pages = [
+    {
+      name: "Início",
+      path: "/",
+    },
+    {
+      name: "Guias do estudante",
+      path: "/guias",
+    },
+    {
+      name: "Prestação de contas",
+      path: "/contas",
+    },
+    {
+      name: "Nosso trabalho",
+      path: "/trabalho",
+    },
+    {
+      name: "fale com a gente",
+      path: "/contato",
+    },
+  ];
+
   return (
     <header className={styles.container}>
       <div className={styles.banner}>
@@ -39,21 +62,15 @@ export default function Header() {
       </div>
       <Hamburguer className={styles.menuHamburguer}>
         <div>
-          <ButtonMenu goTo="/" name="Início" />
-          <ButtonMenu goTo="/guias" name="guias do estudante" />
-          <ButtonMenu goTo="/ligas" name="Ligas acadêmicas" />
-          <ButtonMenu goTo="/" name="prestação de contas" />
-          <ButtonMenu goTo="/" name="Nosso trabalho" />
-          <ButtonMenu goTo="/" name="fale com a gente" />
+          {pages.map((page, index) => {
+            return <ButtonMenu goTo={page.path} name={page.name} key={index} />;
+          })}
         </div>
       </Hamburguer>
       <div className={styles.menu}>
-        <ButtonMenu goTo="/" name="Início" />
-        <ButtonMenu goTo="/guias" name="guias do estudante" />
-        <ButtonMenu goTo="/ligas" name="Ligas acadêmicas" />
-        <ButtonMenu goTo="/" name="prestação de contas" />
-        <ButtonMenu goTo="/" name="Nosso trabalho" />
-        <ButtonMenu goTo="/" name="fale com a gente" />
+        {pages.map((page, index) => {
+          return <ButtonMenu goTo={page.path} name={page.name} key={index} />;
+        })}
       </div>
     </header>
   );
