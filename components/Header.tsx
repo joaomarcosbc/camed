@@ -39,6 +39,7 @@ export default function Header() {
           alt="bannerL"
           height={278}
           className={styles.bannerImages}
+          priority
         />
 
         <div className={styles.bannerCenter}>
@@ -48,6 +49,7 @@ export default function Header() {
             quality={100}
             width={148}
             height={177}
+            priority
           />
           <h2 className={styles.bannerTitle}>
             {"Centro Acadêmico de Medicina “Dr. Augusto césar leite” da UFS".toUpperCase()}
@@ -58,6 +60,7 @@ export default function Header() {
           alt="bannerR"
           height={278}
           className={styles.bannerImages}
+          priority
         />
       </div>
       <Hamburguer className={styles.menuHamburguer}>

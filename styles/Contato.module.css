@@ -10,5 +10,6 @@
 @media (max-width: 950px) {
   .main {
     flex-direction: column;
+    margin-bottom: 100px;
   }
 }
