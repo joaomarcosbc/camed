@@ -5,10 +5,8 @@ import ContactCard from "../../components/ContactCard";
 import { WhatsappLogo } from "phosphor-react";
 import { InstagramLogo } from "phosphor-react";
 import { EnvelopeSimple } from "phosphor-react";
-import { useRouter } from "next/router";
 
 export default function Contato() {
-  const router = useRouter();
   const contacts = [
     {
       title: "WhatsApp",
@@ -18,7 +16,7 @@ export default function Contato() {
         "Cléverton (coordenador geral)",
       ],
       onclick: () => {
-        router.push(
+        window.open(
           `https://api.whatsapp.com/send?phone=5579991822825&text=Olá%20Bia!%20Estou%20entrando%20em%20contato%20através%20do%20site%20do%20Camed-UFS`
         );
       },
@@ -28,7 +26,7 @@ export default function Contato() {
       icon: <InstagramLogo size={70} color="#303030" />,
       contacts: ["@camed.ufs"],
       onclick: () => {
-        router.push("https://instagram.com/camed.ufs");
+        window.open("https://instagram.com/camed.ufs");
       },
     },
     {
