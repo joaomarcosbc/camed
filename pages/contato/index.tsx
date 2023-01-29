@@ -52,18 +52,20 @@ export default function Contato() {
       </Head>
       <Layout>
         <main className={styles.main}>
-          {contacts.map((contact, index) => {
-            return (
-              <ContactCard
-                title={contact.title}
-                key={index}
-                contacts={contact.contacts}
-                onclick={contact.onclick}
-              >
-                {contact.icon}
-              </ContactCard>
-            );
-          })}
+          <div className={styles.cardBox}>
+            {contacts.map((contact, index) => {
+              return (
+                <ContactCard
+                  title={contact.title}
+                  key={index}
+                  contacts={contact.contacts}
+                  onclick={contact.onclick}
+                >
+                  {contact.icon}
+                </ContactCard>
+              );
+            })}
+          </div>
         </main>
       </Layout>
     </div>
