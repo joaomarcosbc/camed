@@ -36,6 +36,7 @@
 
 .text {
   text-align: justify;
+  /* font-family: Roboto; */
 }
 
 @media (max-width: 1320px) {
