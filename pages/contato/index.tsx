@@ -5,8 +5,30 @@ import ContactCard from "../../components/ContactCard";
 import { WhatsappLogo } from "phosphor-react";
 import { InstagramLogo } from "phosphor-react";
 import { EnvelopeSimple } from "phosphor-react";
+import Modal from "../../components/Modal";
+import Button from "../../components/Button";
+import { useState } from "react";
 
 export default function Contato() {
+  const [open, setOpen] = useState<boolean>(false);
+
+  function handleClose() {
+    setOpen(!open);
+  }
+
+  const whatsAppContacts = [
+    {
+      name: "Bia (vice-coordenadora geral)",
+      nick: "Bia",
+      whatsAppNumber: "5579991822825",
+    },
+    {
+      name: "Cléverton (coordenador geral)",
+      nick: "Cléverton",
+      whatsAppNumber: "5579996026079",
+    },
+  ];
+
   const contacts = [
     {
       title: "WhatsApp",
@@ -16,9 +38,7 @@ export default function Contato() {
         "Cléverton (coordenador geral)",
       ],
       onclick: () => {
-        window.open(
-          `https://api.whatsapp.com/send?phone=5579991822825&text=Olá%20Bia!%20Estou%20entrando%20em%20contato%20através%20do%20site%20do%20Camed-UFS`
-        );
+        setOpen(!open);
       },
     },
     {
@@ -39,6 +59,12 @@ export default function Contato() {
       },
     },
   ];
+
+  function sendWhatsAppMessage(contact: any) {
+    window.open(
+      `https://api.whatsapp.com/send?phone=${contact.whatsAppNumber}&text=Olá,%20${contact.nick}!%20Estou%20entrando%20em%20contato%20através%20do%20site%20do%20Camed-UFS`
+    );
+  }
 
   return (
     <div>
@@ -65,6 +91,25 @@ export default function Contato() {
                 </ContactCard>
               );
             })}
+            <Modal title="WhatsApp" open={open} handleClose={handleClose}>
+              <div className={styles.modalBody}>
+                <p className={styles.modalText}>
+                  Para quem você deseja enviar mensagem?
+                </p>
+                <div className={styles.buttonsModal}>
+                  {whatsAppContacts.map((contact) => {
+                    return (
+                      <Button
+                        key={contact.nick}
+                        onclick={() => sendWhatsAppMessage(contact)}
+                      >
+                        {contact.nick}
+                      </Button>
+                    );
+                  })}
+                </div>
+              </div>
+            </Modal>
           </div>
         </main>
       </Layout>
