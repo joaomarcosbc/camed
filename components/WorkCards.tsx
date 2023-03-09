@@ -12,7 +12,7 @@ export default function WorkCard({
   dates,
 }: IWorkCardProps) {
   return (
-    <div key={title} className={styles.container}>
+    <div className={styles.container}>
       <h1>{title}</h1>
       <p>{description}</p>
       <div className={styles.datesBox}>

@@ -33,6 +33,7 @@ export default function Trabalho() {
           {jobs.map((work) => {
             return (
               <WorkCard
+                key={work.title}
                 title={work.title}
                 description={work.description}
                 dates={work.dates}
