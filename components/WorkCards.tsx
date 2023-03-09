@@ -12,14 +12,14 @@ export default function WorkCard({
   dates,
 }: IWorkCardProps) {
   return (
-    <div className={styles.container}>
+    <div key={title} className={styles.container}>
       <h1>{title}</h1>
       <p>{description}</p>
       <div className={styles.datesBox}>
         <p>Acompanhe aqui as últimas datas: </p>
         <div>
           {dates?.map((date) => {
-            return <div>{date}</div>;
+            return <div key={date}>{date}</div>;
           })}
         </div>
       </div>
