@@ -14,7 +14,11 @@ export default function Contas() {
         <link rel="icon" href="/logo.png" />
       </Head>
       <Layout>
-        <main className={styles.main}></main>
+        <main className={styles.main}>
+          <h2 className={styles.message}>
+            Ainda não foi publicado nenhum conteúdo sobre Prestação de Contas 🙁
+          </h2>
+        </main>
       </Layout>
     </div>
   );

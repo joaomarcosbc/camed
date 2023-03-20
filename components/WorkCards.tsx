@@ -14,10 +14,10 @@ export default function WorkCard({
   return (
     <div className={styles.container}>
       <h1>{title}</h1>
-      <p>{description}</p>
+      <p className={styles.description}>{description}</p>
       <div className={styles.datesBox}>
-        <p>Acompanhe aqui as últimas datas: </p>
-        <div>
+        <h4>Acompanhe aqui as últimas datas: </h4>
+        <div className={styles.ul}>
           {dates?.map((date) => {
             return <div key={date}>{date}</div>;
           })}
